@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/register.css">
+<title>Register</title>
+</head>
+<body background="CSS/resources/bgr4.jpeg" >
+<div class="wrapper">
+	<h1 class="heading">- register -</h1>
+	<div class="reg-fields">
+		<div class="word-fields">
+			<p class="reg-words">Username</p>
+			<p class="reg-words">E-mail</p>
+			<p class="reg-words">Password</p>
+			<p class="reg-words">Password(Confirm)</p>
+		</div>
+		<div class="type-fields">
+			<form method="post" action="register.jsp">
+				<input class="field" type="text" name="username" id="username" required/> 
+				<p class="instructions">Username can contain any letters or numbers, without spaces</p>
+				<input class="field" type="text" name="email" id="email" required/>
+				<p class="instructions">Please provide your E-mail</p>
+				<input class="field" type="password" name="password" id="password" required/>
+				<p class="instructions">Password should be at least 4 characters</p>
+				<input class="field" type="password" name="password-conf" id="password-conf" required/>
+				<p class="instructions">Please confirm password</p>
+				<button class="button"><span> - continue - </span></button>
+			</form>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
